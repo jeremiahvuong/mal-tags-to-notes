@@ -1,0 +1,26 @@
+:root {
+  --tag-column-title: "Notes";
+  --tag-column-width: 180px;
+  --tag-text-colour: #000000;
+}
+
+.list-table .list-table-header .header-title.tags {
+  width: var(--tag-column-width);
+  font-size: 0;
+}
+
+.header-title.tags::before {
+  content: var(--tag-column-title);
+  font-size: 11px;
+  cursor: text;
+}
+
+.data.tags span {
+  overflow-wrap: anywhere;
+  cursor: text;
+}
+
+.list-table .list-table-data .data.tags span a {
+  color: var(--tag-text-colour) !important;
+  pointer-events: none;
+}
